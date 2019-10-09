@@ -13,5 +13,37 @@
     font-size: 22px;
     font-weight: bold;
     height: 76px;
+    display: flex;
+    justify-content: center;
     
+}
+.main {
+    display: flex ;
+}
+.leftCountainer{
+    height: 100%;
+    width: 527px;
+    padding: 60px;
+    border-radius: 30px;
+    border-color: #707070 ;
+    h2{
+        padding: 30px;
+        text-align: center ;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 22px;
+        color: #707070;
+    }
+    .buttom{
+        background-color: #2D89E6 ;
+        text-align: center ;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 22px;
+        border-radius: 8 ;
+    }
 }
