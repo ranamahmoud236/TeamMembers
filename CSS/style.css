@@ -1,0 +1,18 @@
+.html, .body {
+  font-family: Segoe UI;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2D89E6;
+  font-size: 22px;
+  font-weight: bold;
+  height: 76px;
+}
+/*# sourceMappingURL=style.css.map */
