@@ -13,6 +13,7 @@
   background: #2D89E6;
   font-size: 22px;
   font-weight: bold;
+  font-family: Segoe UI;
   height: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,5 +108,27 @@
   height: 50px;
   margin-top: 30px;
   position: relative;
+  padding: 0px;
+}
+
+.rightCountainer {
+  background-color: #F6F6F6;
+  height: 100%;
+  width: 1100px;
+  padding: 60px;
+  border-color: #C3C3C3;
+  padding-left: 8px;
+}
+
+.rightCountainer .head {
+  margin: 100px;
+  margin-top: 50px;
+  background: #2D89E6;
+  height: 40px;
+  padding-left: 0px;
+  border-radius: 25px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
