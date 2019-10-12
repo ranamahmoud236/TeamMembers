@@ -105,7 +105,59 @@
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
         margin-left: 0;
-
-    }
+        display: flex;
+        justify-content: flex-start;
+        .sort{
+        display: flex;
+        justify-content: flex-start;
+        margin-left:40px; 
+        margin-right:20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        }
+        }
+        .major{
+        display: flex;
+        justify-content: flex-start;
+        margin-left:20px;
+        margin-right:20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        }
+        input{
+            margin-left:20px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
     
-}
+    .member1 ,.member2 , .member3 , .member4 ,.member5 ,.member6 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Segoe UI' ;
+        }
+        .shape{
+            image{
+            display: flex;
+            justify-content: center;
+            }
+        }
+        
+       .info{
+            color: #2D89E6;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .text{
+            color:#6A6A6A;
+            font-weight: Regular;
+            font-size: 14px;
+
+        }
+
+        }
+
+
+
+    
+    
+
