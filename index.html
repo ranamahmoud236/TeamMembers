@@ -1,154 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="CSS/style.css" />
     <title>PSEU Team Members</title>
-    <script src="main.js"></script>
 </head>
+
 <body>
     <div class="header">
         <h1>PSEU Team Memebers</h1>
     </div>
-    <div class="main"> 
+    <div class="main">
         <div class="leftCountainer">
             <div class="title">
                 <h2>Add new member</h2>
-
             </div>
-            <input type="text" name="Name" placeholder="Name" id="name"><br>
-            <br>
-            <input type="text" name="Email" placeholder="Email" id="email"><br>
-            <br>
+            <input type="text" name="Name" placeholder="Name" id="name" /><br />
+            <br />
+            <input type="text" name="Email" placeholder="Email" id="email" /><br />
+            <br />
             <select id="major">
-                <option valsue="Major">Major</option>
+                <option valsue="">Major</option>
                 <option valsue="Computer Science">Computer Science</option>
                 <option valsue="Computer Engineering">Computer Engineering</option>
                 <option valsue="Information Technology">Information Technology</option>
                 <option valsue="Information System">Information System</option>
-            </select><br>
-            <br>
+            </select><br />
+            <br />
             <select id="role">
-                <option value="Role">Role</option>
+                <option value="">Role</option>
                 <option value="Front-End Developer">Front-End Developer</option>
                 <option value="Back-End Developer">Back-End Developer</option>
                 <option value="Full-Stack Developer">Full-Stack Developer</option>
                 <option value="UI/UX Designer">UI/UX Designer</option>
-            </select><br>
-            <br>
-            <textarea id="biograph" rows="4" cols="50" name="Biograph" placeholder="Biograph"></textarea><br>
-            <br>
+            </select><br />
+            <br />
+            <textarea id="biography" rows="4" cols="50" name="Biography" placeholder="Biography"></textarea><br />
+            <br />
             <div class="check">
-                <input id="1" type="checkbox" class="checkinput">Add to bottom / or index 
-                <input id="2" type="text" class="atIndex"><br>
-
+                <input id="addToBottom" type="checkbox" class="checkinput" />Add to bottom / or
+                index <input id="atIndex" type="text" class="atIndex" /><br />
             </div>
-            <button  type="button" onclick="">
+            
+            <button type="button" onclick="addMembers()">
                 <p>Save</p>
             </button>
         </div>
         <div class="rightCountainer">
-                <div class="head">
-                    <div class="content">
-                            <div id="sort" class="sort">
-                                    <h6>SORT BY</h6>
-                                    <select>
-                                        <option value="A-Z">A-Z</option>
-                                        <option value="Z-A">Z-A</option>
-                                        <option value="Newest">Newest</option>
-                                        <option value="Oldest">Oldest</option>
-                                    </select>
-                                </div>
-                                <div class="spector"></div>
-                                <div class="major">
-                                    <select>
-                                        <option value="Major">Major</option>
-                                        <option valsue="Computer Science">Computer Science</option>
-                                        <option valsue="Computer Engineering">Computer Engineering</option>
-                                        <option valsue="Information Technology">Information Technology</option>
-                                        <option valsue="Information System">Information System</option>
-                                    </select>
-                                    <select>
-                                        <option value="Role">Role</option>
-                                        <option value="Front-End Developer">Front-End Developer</option>
-                                        <option value="Back-End Developer">Back-End Developer</option>
-                                        <option value="Full-Stack Developer">Full-Stack Developer</option>
-                                        <option value="UI/UX Designer">UI/UX Designer</option>
-                                    </select>
-                                </div>
-                                <div class="spector"></div>
-                                <input type="text" name="Name" placeholder="Search by name ...">
-
+            <div class="head">
+                <div class="content">
+                    <div id="sort" class="sort">
+                        <h6>SORT BY</h6>
+                        <select>
+                            <option value="A-Z">A-Z</option>
+                            <option value="Z-A">Z-A</option>
+                            <option value="Newest">Newest</option>
+                            <option value="Oldest">Oldest</option>
+                        </select>
                     </div>
-                    <div class="iteam">
-                        <p>15 Iteams</p>
-                    </div>  
+                    <div class="spector"></div>
+                    <div class="major">
+                        <select>
+                            <option value="">Major</option>
+                            <option valsue="Computer Science">Computer Science</option>
+                            <option valsue="Computer Engineering">Computer Engineering</option>
+                            <option valsue="Information Technology">Information Technology</option>
+                            <option valsue="Information System">Information System</option>
+                        </select>
+                        <select>
+                            <option value="">Role</option>
+                            <option value="Front-End Developer">Front-End Developer</option>
+                            <option value="Back-End Developer">Back-End Developer</option>
+                            <option value="Full-Stack Developer">Full-Stack Developer</option>
+                            <option value="UI/UX Designer">UI/UX Designer</option>
+                        </select>
+                    </div>
+                    <div class="spector"></div>
+                    <input type="text" name="Name" placeholder="Search by name ..." />
                 </div>
-                <div class="members">
-                    <div class="member1">
-                        <div class="shape">
-                            <link rel="stylesheet" href="shape.png">
-                        </div>
-                        <div class="information">
-                            <h1>Faris Abu4ram</h1>
-                            <p class="info">faris@pseu.com / Information Technology / Front-End Developer</p>
-                            <p class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>                        </div>
-                         </div>
-                         <div class="member2">
-                                <div class="shape">
-                                    <link rel="stylesheet" href="shape.png">
-                                </div>
-                                <div class="information">
-                                    <h1>Ibrahim Abusamra</h1>
-                                    <p class="info">faris@pseu.com / Information Technology / Front-End Developer</p>
-                                    <p class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>                        </div>
-                                </div>
-                            <div class="member3">
-                                <div class="shape">
-                                    <link rel="stylesheet" href="shape.png">
-                                </div>
-                                <div class="information">
-                                    <h1>Mohamd Alnatsha</h1>
-                                    <p class="info">faris@pseu.com / Information Technology / Front-End Developer</p>
-                                    <p class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>                        </div>
-                                    </div>
-                            <div class="member4">
-                                <div class="shape">
-                                    <link rel="stylesheet" href="shape.png">
-                                </div>
-                                <div class="information">
-                                    <h1>Amir Altakroori</h1>
-                                    <p class="info">faris@pseu.com / Information Technology / Front-End Developer</p>
-                                    <p class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>                        </div>
-                                    </div>
-                            <div class="member5">
-                                <div class="shape">
-                                    <link rel="stylesheet" href="shape.png">
-                                </div>
-                                <div class="information">
-                                    <h1>Aseel Arafeh</h1>
-                                    <p class="info">faris@pseu.com / Information Technology / Front-End Developer</p>
-                                    <p class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>                        </div>
-                                    </div>
-                            <div class="member6">
-                                <div class="shape">
-                                    <link rel="stylesheet" href="shape.png">
-                                </div>
-                                <div class="information">
-                                    <h1>Basil Atawneh</h1>
-                                    <p class="info">faris@pseu.com / Information Technology / Front-End Developer</p>
-                                    <p class="text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. </p>                        </div>
-                                    </div>
-
-                    
+                <div class="iteam">
+                    <p>15 Iteams</p>
+                </div>
             </div>
-
-
-
+            <div class="members" id="members">
+                
+            </div>
         </div>
     </div>
-    
+
+    <script src="js/main.js"></script>
 </body>
+
 </html>
